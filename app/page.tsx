@@ -16,13 +16,13 @@ export default function Home() {
       {/* Buttons */}
       <div className="flex gap-6">
         <Link
-          href="/login"
+          href="/user/login"
           className="px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded-xl text-lg font-semibold transition-all shadow-md hover:shadow-blue-500/30"
         >
           Login
         </Link>
         <Link
-          href="/register"
+          href="/user/register"
           className="px-6 py-3 border border-blue-400 hover:bg-blue-500 hover:text-white rounded-xl text-lg font-semibold transition-all shadow-md hover:shadow-blue-500/30"
         >
           Register
