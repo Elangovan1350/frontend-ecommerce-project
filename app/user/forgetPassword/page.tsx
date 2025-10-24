@@ -23,7 +23,7 @@ const Page = () => {
   const onSubmit = async (data: z.infer<typeof forgetPasswordSchema>) => {
     try {
       const res = await axios.post(
-        "https://backend-e-comerce-project.vercel.app/forget-password",
+        "https://backend-e-comerce-project.vercel.app/forgot-password",
         data
       );
 
