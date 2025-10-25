@@ -53,7 +53,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-900 via-gray-800 to-black text-white px-4">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-l from-gray-900 via-gray-800 to-black text-white px-4">
       <div className="w-full max-w-md bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
         <h1 className="text-3xl font-semibold text-center mb-6 text-white">
           Change Password 🔒
