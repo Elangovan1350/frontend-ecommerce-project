@@ -6,14 +6,12 @@ import * as z from "zod";
 import axios from "axios";
 import { toast } from "sonner";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const forgetPasswordSchema = z.object({
   email: z.email({ message: "Invalid email address" }),
 });
 
 const Page = () => {
-  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -31,7 +29,6 @@ const Page = () => {
 
       if (res.data.success) {
         toast.success("Password reset link sent to your email!");
-        router.push(res.data.redirect_url || "/user/login");
         // You can add redirect logic here if needed
       } else {
         toast.error(res.data.message || "Password reset failed!");
