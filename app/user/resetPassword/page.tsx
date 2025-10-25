@@ -39,7 +39,11 @@ function ResetPasswordContent() {
     try {
       const res = await axios.post(
         "https://backend-e-comerce-project.vercel.app/reset-password",
-        { token, password: data.password, email: data.email }
+        {
+          token,
+          newPassword: data.password,
+          email: data.email,
+        }
       );
 
       if (res.data.success) {
